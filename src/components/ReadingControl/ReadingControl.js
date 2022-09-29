@@ -73,8 +73,8 @@ const ReadingControl = () => {
                             <button onClick={()=>setBrTime(10)}><span>10</span>min</button>
                             <button onClick={()=>setBrTime(20)}><span>20</span>min</button>
                             <button onClick={()=>setBrTime(30)}><span>30</span>min</button>
-                            <button onClick={()=>setBrTime(30)}><span>40</span>min</button>
-                            <button onClick={()=>setBrTime(30)}><span>50</span>min</button>
+                            <button onClick={()=>setBrTime(40)}><span>40</span>min</button>
+                            <button onClick={()=>setBrTime(50)}><span>50</span>min</button>
                         </div>
                     </div>
                     <div className='exercise'>
