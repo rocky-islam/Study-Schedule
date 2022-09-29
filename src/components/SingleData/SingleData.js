@@ -1,16 +1,16 @@
 import React from 'react';
 import DataCart from '../DataCart/DataCart';
 import './SingleData.css'
-const SingleData = ({singleData}) => {
-    // console.log(singleData[0].name);
+const SingleData = ({loadData}) => {
+    // console.log(loadData);
     
     
     return (
-        <div>
-            <h1>Form single data</h1>
-            <DataCart></DataCart>
+        <div className='cart'>
+            {/* <h1>Form single data</h1> */}
+            {/* <DataCart></DataCart> */}
             {
-                singleData.map(data => <DataCart cartData={data} key={data.id}></DataCart>
+                loadData.map(dt => <DataCart loadData={dt} key={dt.id}></DataCart>
                 )
             }
         </div>

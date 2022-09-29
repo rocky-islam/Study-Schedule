@@ -5,7 +5,7 @@ import ReadingControl from './components/ReadingControl/ReadingControl';
 function App() {
 
   return (
-    <div className="App">
+    <div>
       <h1>Hello form app.js</h1>
       <ReadingControl></ReadingControl>
     </div>

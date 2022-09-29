@@ -7,7 +7,7 @@ const ReadingControl = () => {
      const [loadData, setLoadData] = useState([]);
 
      useEffect(() => {
-       fetch('data.json')
+       fetch("data.json")
          .then((res) => res.json())
          .then((data) => setLoadData(data));
      }, []);
@@ -17,8 +17,8 @@ const ReadingControl = () => {
         <div>
             <div className='mainBody'>
                 <div className="left-side">
-                    <h1>Left side bar</h1>
-                    <SingleData singleData = {loadData}></SingleData>
+                    
+                    <SingleData loadData = {loadData}></SingleData>
                 </div>
                 <div className="right-side-cart">
                     <h1>Right side cart</h1>

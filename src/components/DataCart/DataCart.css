@@ -1,0 +1,35 @@
+.data{
+    position: relative;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 8px;
+
+}
+.data p{
+    font-size: 20px;
+}
+.data img{
+    width: 280px;
+    height: 250px;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+button{
+    width: 245%;
+    color: white;
+    background-color: rgb(71, 97, 222);
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    color:tomato;
+    background-color: burlywood;
+    
+}
