@@ -19,7 +19,7 @@
     
 }
 
-button{
+.button{
     width: 245%;
     color: white;
     background-color: rgb(71, 97, 222);
@@ -28,7 +28,7 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
-button:hover{
+.button:hover{
     color:tomato;
     background-color: burlywood;
     
