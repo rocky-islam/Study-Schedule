@@ -5,6 +5,12 @@ import './ReadingControl.css'
 const ReadingControl = () => {
 
      const [loadData, setLoadData] = useState([]);
+     const [cart, setCart] = useState([])
+
+     const handleCart = (time)=>{
+        setCart([...cart,time])
+        // console.log(cart);
+     }
 
      useEffect(() => {
        fetch("data.json")
@@ -18,10 +24,10 @@ const ReadingControl = () => {
             <div className='mainBody'>
                 <div className="left-side">
                     
-                    <SingleData loadData = {loadData}></SingleData>
+                    <SingleData loadData = {loadData} cart={cart} handleCart={handleCart}></SingleData>
                 </div>
                 <div className="right-side-cart">
-                    <h1>Right side cart</h1>
+                    <h1>time:{cart.reduce((a, b)=>a+b,0)}</h1>
                 </div>
             </div>
         </div>
