@@ -1,0 +1,12 @@
+.mainBody{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    padding: 20px;
+}
+.left-side{
+    border: 1px solid gray;
+}
+.right-side-cart{
+    border: 1px dotted red;
+}
