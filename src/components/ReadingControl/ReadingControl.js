@@ -86,7 +86,7 @@ const ReadingControl = () => {
                         </div>
                     </div>
                     <div className='exercise'>
-                        <h3>Exercise Details</h3>
+                        <h3>Reading Details</h3>
                         <div>
                             <div className='exercise-time'>
                                 <p className='ex-time'>Exercise Time: </p>

@@ -11,7 +11,7 @@ const DataCart = ({ loadData, cart, handleCart }) => {
       <p>Name: {name}</p>
       <p>Time: {time} min</p>
       <div className="btn">
-        <button className='button' onClick={()=>{handleCart(time)}}>Add to cart</button>
+        <button className='button' onClick={()=>{handleCart(time)}}>Add to List</button>
       </div>
     </div>
   );
