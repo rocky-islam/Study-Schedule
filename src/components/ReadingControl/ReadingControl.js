@@ -11,10 +11,18 @@ const ReadingControl = () => {
      const[brTime,setBrTime] = useState(0);
 
     //  break time
-    const breakTime = () =>{
-        console.log('click me');
+    const breakTime = (breakTime) =>{
+        setBrTime(breakTime);
+        localStorage.setItem('time',breakTime);
         
     }
+
+    useEffect(()=>{
+        const localTime = localStorage.getItem('time');
+        if(localTime){
+            setBrTime(localTime);
+        }
+    },[])
 
      const handleCart = (time)=>{
         setCart([...cart,time])
@@ -70,11 +78,11 @@ const ReadingControl = () => {
                     <div className='break'>
                         <h3>Add a Break</h3>
                         <div className='break-time'>
-                            <button onClick={()=>setBrTime(10)}><span>10</span>min</button>
-                            <button onClick={()=>setBrTime(20)}><span>20</span>min</button>
-                            <button onClick={()=>setBrTime(30)}><span>30</span>min</button>
-                            <button onClick={()=>setBrTime(40)}><span>40</span>min</button>
-                            <button onClick={()=>setBrTime(50)}><span>50</span>min</button>
+                            <button onClick={()=>breakTime(10)}><span>10</span>min</button>
+                            <button onClick={()=>breakTime(20)}><span>20</span>min</button>
+                            <button onClick={()=>breakTime(30)}><span>30</span>min</button>
+                            <button onClick={()=>breakTime(40)}><span>40</span>min</button>
+                            <button onClick={()=>breakTime(50)}><span>50</span>min</button>
                         </div>
                     </div>
                     <div className='exercise'>
