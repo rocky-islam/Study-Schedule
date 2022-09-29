@@ -9,14 +9,16 @@
     padding: 10px;
 }
 .left-side{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 .right-side-cart{
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
 }
 
 .right-cart{
     padding: 5px 20px;
+    position: sticky;
+    top: 0;
 }
 .profile{
     display: flex;

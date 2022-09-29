@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello form app.js</h1>
+      <h3 className='study'>Study Schedule</h3>
       <ReadingControl></ReadingControl>
       <Question></Question>
     </div>

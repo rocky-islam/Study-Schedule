@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.study{
+  padding: 20px;
+  color: rgb(71, 97, 222);
+  font-size: 25px;
+}
